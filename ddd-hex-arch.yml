@@ -1,0 +1,20 @@
+server:
+  port: 8050
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      showDetails: ALWAYS
+  server:
+    port: 8051
+  info:
+    git:
+      mode: full
+
+eureka:
+  instance:
+    prefer-ip-address: true
